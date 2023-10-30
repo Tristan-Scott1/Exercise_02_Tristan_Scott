@@ -95,7 +95,7 @@ body {
 .second-asset {
     width: 100%;
     height: 100%;
-    rotate: 45deg;
+    /* rotate: 45deg; */
     transition: opacity 0.3s ease;
     /* Add a transition for smooth fading */
     position: absolute;
