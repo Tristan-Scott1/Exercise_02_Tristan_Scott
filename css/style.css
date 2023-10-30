@@ -1,0 +1,162 @@
+/* Typography */
+h1 {
+    color: var(--Orange, #F27A5F);
+    /* h1 */
+    font-family: Oswald;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: var(--Orange, #F27A5F);
+    /* h2 */
+    font-family: Aleo;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+p {
+    color: #FFF;
+    /* p */
+    font-family: Aleo;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.name {
+    color: var(--Orange, #F27A5F);
+    /* p name */
+    font-family: Aleo;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* White class for elements of the unordered list (made the bullet points white). */
+.white {
+    color: #FFF;
+}
+
+/* End Typography */
+
+/* Backgrounds/Padding */
+body {
+    background: var(--Dark-Purple, #352740);
+}
+
+.pg-padding {
+    padding: 50px;
+}
+
+.newCSS {
+    background: var(--Purples-Gradient, linear-gradient(180deg, #6B5967 0%, #352740 100%));
+}
+
+.favorite {
+    background: var(--Dark-Purple, #352740);
+}
+
+.AI {
+    background: var(--purple-gradient-2, linear-gradient(180deg, #352740 0%, #6B5967 100%));
+}
+
+/* End Backgrounds/Padding */
+
+/* SVG -> SVG Hover State (ChatGPT) */
+.image-container {
+    position: relative;
+    width: 500px;
+    /* Adjust the container size as needed */
+    height: 500px;
+    /* Adjust the container size as needed */
+    overflow: hidden;
+}
+
+.first-asset,
+.second-asset {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+    /* Add a transition for smooth fading */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.second-asset {
+    opacity: 0;
+    /* Initially hide the second asset */
+    z-index: 1;
+    /* Ensure the second asset is on top */
+}
+
+.image-container:hover .first-asset {
+    opacity: 0;
+    /* Hide the first asset */
+}
+
+.image-container:hover .second-asset {
+    opacity: 1;
+    /* Show the second asset */
+}
+
+/* End SVG -> SVG Hover State (ChatGPT) */
+
+/* Grid Layouts */
+.examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 20px;
+}
+
+.examples> :nth-child(1) {
+    grid-column: 2;
+}
+
+.attributes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.parent-grid {
+    display: grid;
+    grid-row-gap: 100px;
+}
+
+/* .attributes h2 {
+    text-align: center;
+} */
+
+.sungrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    padding: 150px;
+}
+
+.sungrid> :nth-child(1) {
+    grid-column: 2;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.columns> :nth-child(1) {
+    grid-column: 2;
+}
+
+/* End Grid Layouts */

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head is for the invisible stuff -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2: Tristan Scott</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@100;300;700&family=Oswald:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aleo:wght@100;300;700&family=Oswald:wght@400;700&display=swap');
+    </style>
+
+    <!-- body is for the visible stuff -->
+
+<body>
+    <main>
+        <section class="newCSS pg-padding">
+
+            <h1>CSS: NESTING</h1>
+            <p>Nesting allows you to place one style rule inside another, enabling the inner rule to use, or inherit,
+                the same elements as the outer rule. This simplifies the process of grouping similar styles together in
+                your CSS file, making it easier to read and manage your code.</p>
+            <p>CSS nesting using the ‘&’ syntax is typically associated with preprocessors like Sass and SCSS. It allows
+                you to create more organized and maintainable CSS code by specifying styles for nested elements without
+                repeating the parent selector.</p>
+
+            <div class="parent-grid">
+                <div class="examples">
+                    <div>
+                        <h2>Traditional CSS</h2>
+                        <img src="images/example_01.PNG" alt="Traditional CSS">
+                    </div>
+                    <div>
+                        <h2>CSS Nesting</h2>
+                        <img src="images/example_02.PNG" alt="CSS Nesting">
+                    </div>
+                </div>
+                <div class="attributes">
+                    <div>
+                        <h2>LIMITATIONS</h2>
+                        <p>While nesting is a helpful feature, over-nesting can result in overly specific selectors and
+                            a more complex CSS output. It's important to use nesting judiciously to maintain a clean and
+                            efficient codebase.</p>
+                    </div>
+                    <div>
+                        <h2>ADVANTAGES</h2>
+                        <!-- unordered list of three advantages -->
+                        <ul class="white">
+                            <li>
+                                <p>Readability: Nesting makes your code more structured and easier to follow since it
+                                    visually represents the element hierarchy.</p>
+                            </li>
+                            <li>
+                                <p>Maintenance: If you need to change the parent selector, you only need to update it in
+                                    one place.</p>
+                            </li>
+                            <li>
+                                <p>Reduced Repetition: You avoid repeating the parent selector, which can lead to more
+                                    concise code.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>SUMMARY</h2>
+                        <p>Nesting in CSS using the & syntax in preprocessors is a way to simplify your code and make it
+                            more maintainable by referencing the parent selector within nested blocks, reducing
+                            repetition, and improving code organization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="favorite pg-padding">
+
+            <h1>favorite so far: HOVER Selector</h1>
+            <p>I personally don’t have a ton of experience coding in HTML and CSS, so I haven't learned a lot about the
+                tools that the languages offer. That being said, I think that one of my favorite features of CSS that I
+                have learned so far is the hover selector. </p>
+            <p>The main job of CSS is to format a page nicely, and it can start to feel like you are putting a lot of
+                work into a static document. However, just by adding hover states to elements of your presentation, you
+                can truly bring it to life, reminding viewers of the amazing component of the web: interactivity.</p>
+
+            <!-- I want to add a hover state to this img that changes the gradient of the img, or changes to the variant svg that I made in figma. I got chatgpt to help me make some code to do this-->
+            <div class="sungrid">
+                <div class="image-container">
+                    <img class="first-asset" src="images/sun.svg" alt="First Image">
+                    <img class="second-asset" src="images/sunHover.svg" alt="Second Image">
+                </div>
+            </div>
+
+        </section>
+        <section class="AI pg-padding">
+
+            <h1>THE IMPACT OF AI</h1>
+            <p>I believe that AI tools like ChatGPT, GitHub Copilot, and others are extremely helpful for web designers,
+                and positively impact web development. </p>
+            <p>ChatGPT can be a great tool for students learning how to code for HTML and CSS. They can feed examples to
+                the tool and have it explain to them what is going on, or even take more thorough and complex
+                definitions and explanations from reputable resources such as w3.org and re-word them in ways easier to
+                understand for individuals who may not yet have the vocabulary to navigate these spaces.</p>
+            <p>AI such as Copilot can reduce stress and save time by managing repetitive tasks and providing well
+                structured data in no time. This allows developers to solve tasks more creatively, or put more time and
+                energy in to higher level tasks. Human involvement remains crucial for creativity, ethical
+                considerations, intricate decision-making, and understanding AI-generated outcomes. This ensures that
+                websites are both effective and secure, while also aligning with human values and goals. When AI and
+                human expertise work together, they can create more advanced, efficient, and user-friendly websites.</p>
+            <div class="sungrid columns">
+                <div class="image-container">
+                    <img class="first-asset" src="images/helpinghand.svg" alt="First Image">
+                    <img class="second-asset" src="images/helpinghandHover.svg" alt="Second Image">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="name">Exercise 2: Tristan Scott</p>
+    </footer>
+</body>
+
+</html>
