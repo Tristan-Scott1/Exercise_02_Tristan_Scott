@@ -1,6 +1,15 @@
+/* Variable Names */
+
+:root {
+    --dark-purple: #352740;
+    --purple-gradient: linear-gradient(180deg, #6B5967 0%, #352740 100%);
+    --purple-gradient-2: linear-gradient(180deg, #352740 0%, #6B5967 100%);
+    --orange: #F27A5F;
+}
+
 /* Typography */
 h1 {
-    color: var(--Orange, #F27A5F);
+    color: var(--orange);
     /* h1 */
     font-family: Oswald;
     font-size: 70px;
@@ -8,10 +17,11 @@ h1 {
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 h2 {
-    color: var(--Orange, #F27A5F);
+    color: var(--orange);
     /* h2 */
     font-family: Aleo;
     font-size: 30px;
@@ -32,7 +42,7 @@ p {
 }
 
 .name {
-    color: var(--Orange, #F27A5F);
+    color: var(--orange);
     /* p name */
     font-family: Aleo;
     font-size: 23px;
@@ -50,7 +60,7 @@ p {
 
 /* Backgrounds/Padding */
 body {
-    background: var(--Dark-Purple, #352740);
+    background: var(--dark-purple);
 }
 
 .pg-padding {
@@ -58,15 +68,15 @@ body {
 }
 
 .newCSS {
-    background: var(--Purples-Gradient, linear-gradient(180deg, #6B5967 0%, #352740 100%));
+    background: var(--purple-gradient);
 }
 
 .favorite {
-    background: var(--Dark-Purple, #352740);
+    background: var(--dark-purple);
 }
 
 .AI {
-    background: var(--purple-gradient-2, linear-gradient(180deg, #352740 0%, #6B5967 100%));
+    background: var(--purple-gradient-2);
 }
 
 /* End Backgrounds/Padding */
@@ -85,6 +95,7 @@ body {
 .second-asset {
     width: 100%;
     height: 100%;
+    rotate: 45deg;
     transition: opacity 0.3s ease;
     /* Add a transition for smooth fading */
     position: absolute;
@@ -110,6 +121,10 @@ body {
 }
 
 /* End SVG -> SVG Hover State (ChatGPT) */
+
+.border-radius {
+    border-radius: 10px;
+}
 
 /* Grid Layouts */
 .examples {
